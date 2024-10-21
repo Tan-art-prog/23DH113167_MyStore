@@ -1,4 +1,4 @@
-﻿@model _23DH113167_MyStore.Models.Category
+﻿﻿@model _23DH113167_MyStore.Models.Category
 
 @{
     ViewBag.Title = "Create";
@@ -12,11 +12,11 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-         <h4>Category</h4>
-         <hr />
-         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <h4>Category</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-         @* Nhúng Partial View vào form cha *@
-         @Html.Partial("PartialViewCreateEditCategory",Model)
+        @* Nhúng Partial View vào form cha *@
+        @Html.Partial("PartialViewCreateEditCategory", Model)
     </div>
 }
