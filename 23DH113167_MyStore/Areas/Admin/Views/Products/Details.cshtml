@@ -24,11 +24,19 @@
         </dt>
 
         <dd>
-            Đơn giá
+            @Html.DisplayFor(model => model.ProductDescription)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.ProductImage)
+            Đơn giá
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductPrice)
+        </dd>
+            
+        <dt>
+            Hình ảnh
         </dt>
 
         <dd>
@@ -36,15 +44,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.ProductDescription)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ProductDescription)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.CategoryName)
+            Danh mục
         </dt>
 
         <dd>
